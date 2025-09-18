@@ -8,18 +8,17 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Process task based on priority
 match priority:
     case "high":
-        reminder = f"🔴 High priority task: {task}."
+        message = f"Reminder: '{task}' is a HIGH priority task."
     case "medium":
-        reminder = f"🟡 Medium priority task: {task}."
+        message = f"Reminder: '{task}' is a MEDIUM priority task."
     case "low":
-        reminder = f"🟢 Low priority task: {task}."
+        message = f"Reminder: '{task}' is a LOW priority task."
     case _:
-        reminder = f"⚪ Task: {task} (priority not specified)."
+        message = f"Reminder: '{task}' has an unspecified priority."
 
 # Modify message if time-bound
 if time_bound == "yes":
-    reminder += " This task requires immediate attention today!"
+    message += " This task requires immediate attention today!"
 
-# Use a loop to emphasize the reminder (example: repeat 3 times)
-for i in range(3):
-    print(reminder)
+# Print the customized reminder directly
+print(message)
