@@ -1,12 +1,12 @@
 # arithmetic_operations.py
 
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     """
     Perform a basic arithmetic operation between two numbers.
 
     Parameters:
-        num1 (float): The first number.
-        num2 (float): The second number.
+        num1: The first number (int or float).
+        num2: The second number (int or float).
         operation (str): The operation to perform.
                          Options: 'add', 'subtract', 'multiply', 'divide'.
 
