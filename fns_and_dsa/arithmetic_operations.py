@@ -5,8 +5,8 @@ def perform_operation(num1, num2, operation):
     Perform a basic arithmetic operation between two numbers.
 
     Parameters:
-        num1: The first number (int or float).
-        num2: The second number (int or float).
+        num1 (float): The first number.
+        num2 (float): The second number.
         operation (str): The operation to perform.
                          Options: 'add', 'subtract', 'multiply', 'divide'.
 
